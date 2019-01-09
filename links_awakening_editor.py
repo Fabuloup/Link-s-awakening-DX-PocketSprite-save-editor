@@ -1,6 +1,7 @@
 import sys
 from tkinter import *
 from tkinter import filedialog
+from tkinter import messagebox
 
 # Objects
 #
@@ -318,6 +319,7 @@ def save():
         
         f.close()
     load()
+    messagebox.showinfo("Information", "Data saved !")
 
 def open_file():
     global filename
